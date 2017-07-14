@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
      <link href="assets/css/font-awesome.css" rel="stylesheet">  
+     <link rel="shortcut icon" type="image/x-ico" href="assets/images/favicon.ico">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,7 +19,10 @@
     <![endif]-->
       
        <style>
-        
+       body
+           {
+               padding-top: 50px;
+           }
    #home img
         {
             width: 100%;
@@ -26,7 +30,7 @@
         }
     #navigationbar>.navbar-nav>li>a
         {
-            color: whitesmoke;
+            color: gray;
             font-size: 20px;
         }
    #nav-start a
@@ -38,14 +42,20 @@
            }
         nav.navbar
         {
-            background-color: transparent;
+/*            background-color: transparent;*/
             border: none;
         }
+           #navbar-icon
+           {
+               text-align: right;
+               font-size: 30px;
+           }
     #home
         {
             
             position: relative;
             height: 650px;
+            margin-top: -50px;
         }
     #home .container
         {
@@ -86,7 +96,7 @@
            }
       section
           {
-               min-height: 400px;
+               min-height: 500px;
           }
       section h3
           {
@@ -103,7 +113,7 @@
         section #circle-img
            {
                margin:20px 0px 20px 80px;
-               border: 2px solid black;
+              
                margin-right: 75px;
            }
         section .icon
@@ -119,6 +129,71 @@
                color: darkgrey;
            }
 */
+           #Portfolio .portfolio-img img
+           {
+               padding: 20px;
+               border: 2px solid black;
+           }
+           #Portfolio .portfolio-img img:hover
+           {
+               opacity: 0.4;
+               
+           }
+          section #team-icon 
+           {
+               text-align: center;
+               font-size: 30px;
+               margin-bottom: 20px;
+           }
+            section #team-icon i
+           {
+               color: darkslateblue;
+           }
+           section #team-icon i:hover
+           {
+               color: gold;
+               font-size: 40px;
+           }
+/*
+           #Contact
+           {
+              
+               
+               position: relative;
+           }
+           #Contact .container
+           {
+               position: absolute;
+               
+              
+           }
+*/
+           footer
+           {
+               min-height: 50px;
+              background-color: goldenrod;
+           }
+           footer #footer-icon
+           {
+               font-size: 30px;
+               text-align: center;
+           }
+            footer #footer-icon i
+           {
+               color: darkslategray;
+           }
+            footer #footer-icon i:hover
+           {
+               font-size: 40px;
+               color: aqua;
+           }
+            #mygooglemap
+            {
+              height: 400px;
+                width: 100%; 
+                
+            }
+         
            @media (max-width: 500px){
                
                
@@ -138,20 +213,25 @@
         <span class="icon-bar"></span>
       </button>
         <div id="nav-start">
-      <a class="navbar-brand style:color-" href="#">Start Bootstrap</a>
+      <a class="navbar-brand style:color-" href="#home"><b>Start Bootstrap</b></a>
         </div>
     </div>
  <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="navigationbar">
         <ul class="nav navbar-nav">
-             <li><a href="#">About</a></li>
-             <li><a href="#">Services</a></li>
-             <li><a href="#">Portfolio</a></li>
-             <li><a href="#">Team</a></li>
-             <li><a href="#">What we do</a></li>
-             <li><a href="#">Contact</a></li>
+             <li><a href="#About">About</a></li>
+             <li><a href="#Services">Services</a></li>
+             <li><a href="#Portfolio">Portfolio</a></li>
+             <li><a href="#Team">Team</a></li>
+             <li><a href="#Contact">Contact</a></li>
+             <li><a href="#Map">Map</a></li>
         </ul>
-       
+       <div id="navbar-icon">
+             <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>    
+               <a href="http://likedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+          <a href="http://youtube.com" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a> 
+         </div>
      </div>
     </div>
       </nav>
@@ -164,7 +244,7 @@
            <h2 class="home-line text-center">IT'S NICE TO MEET YOU</h2>
            
                <div class="scroll-icon text-center">
-                  <a href="#">
+                  <a href="#About">
                       <span class="glyphicon glyphicon-menu-down"></span>
                       </a>
                   </div>
@@ -289,8 +369,50 @@
        <div class="row">
        <h2 class="text-center">Portfolio</h2>   
         <h3 class="text-center">Lorem ipsum dolor sit amet consectetur.</h3>  
-           
-           
+        <div class="container">
+         <div class="row">
+             <div class="portfolio-img">
+                  <a href="#home">
+              <div class="col-md-6">
+               
+             <img src="assets/images/portfolio-1.jpg" class="img-responsive">
+               
+            </div>
+                </a>
+             </div>
+             <div class="portfolio-img">
+                 <a href="#home">
+            <div class="col-md-6">
+                 
+             <img src="assets/images/portfolio-2.jpg" class="img-responsive">
+                
+            </div>
+                </a>
+             </div>
+        <div class="container">
+         <div class="row">
+             <div class="portfolio-img">
+                  <a href="#home">
+            <div class="col-md-6">
+                
+             <img src="assets/images/portfolio-3.jpg" class="img-responsive">
+              
+            </div>
+                    </a>
+             </div>
+             <div class="portfolio-img">
+                   <a href="#home">
+            <div class="col-md-6">
+               
+             <img src="assets/images/portfolio-4.jpg" class="img-responsive">
+               
+            </div>
+                 </a>
+             </div>
+            </div>
+         </div>   
+        </div> 
+           </div>
            
        </div>    
       </div>
@@ -301,32 +423,144 @@
        <div class="row">
        <h2 class="text-center">Our Amazing Team</h2>   
        <h3 class="text-center">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="container">
+          <div class="row">
            
+              <div class="col-md-4">
+                   <div id="circle-img">
+                  <img src="assets/images/1%20(1).jpg" class="img-responsive img-circle">
+                    </div>
+                   <h1 class="text-center"><b>Kay Garland</b></h1>
+                   <h3 class="text-center">Lead Designer</h3>
+                  <div id="team-icon">
+             <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>    
+               <a href="http://likedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+                  </div>
+                  
+            </div>
+        
+          <div class="col-md-4">
+              <div id="circle-img">
+            <img src="assets/images/2%20(1).jpg" class="img-responsive img-circle">
+                  </div>
+              <h1 class="text-center"><b>Larry Parker</b></h1>
+              <h3 class="text-center">Lead Marketer</h3>
+              <div id="team-icon">
+             <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>    
+               <a href="http://likedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+                  </div>
+        </div>
+           
+        <div class="col-md-4">
+              <div id="circle-img">
+           <img src="assets/images/3%20(2).jpg" class="img-responsive img-circle"> 
+        </div>
+            <h1 class="text-center"><b>Diana Pertersen</b></h1>
+            <h3 class="text-center">Lead Developer</h3>
+            <div id="team-icon">
+             <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>    
+               <a href="http://likedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  
+                  </div>
+            </div>
+             
+        </div>   
+        </div> 
            
        </div>    
-      </div>
-      </section>
-      
-      <section id="What-we-do">
-      <div class="container">
-        <div class="row">
-        <h2 class="text-center">What We Do</h2> 
-            
-            
-        </div> 
       </div>
       </section>
       
       <section id="Contact">
       <div class="container">
         <div class="row">
-        <h2 class="text-center">Contact Us</h2> 
-        
+        <h2 class="text-center">Contact</h2> 
+            
+           
+           
+            <div class="container">
+              <div class="row">
+                  
+                <div class="col-md-4">
+                  <h3 class="text-center">Where to met ?</h3>
+                  <h4 class="text-center" style="color:gray;">Bld. Mihail Kogalniceanu nr. 8 Bucharest, Romania</h4>
+                    <hr>
+                   <h3 class="text-center">Want to say hello ?</h3>
+                      <hr>
+                    <div class="text-center"> 
+                      <a href="#" class="btn btn-primary">Contact Us</a>
+                    </div>
+                    <hr>
+                      <h3 class="text-center">Thank you for 948 shares!</h3>
+                      <div class="text-center" style="hover:">
+                          <a href="http://facebook.com" target="_blank" class="btn btn-primary"><i class="fa fa-facebook-square" aria-hidden="true"> Facebook</i></a>
+                          <a href="http://twitter.com" target="_blank" class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></a>
+                          </div>
+                      </div>
+                 
+                    
+                  <div class="col-md-8">
+                   <img src="assets/images/winter_world_physical_giclee_lg.jpg" class="img-responsive">
+                  </div>
+            </div>
+            </div>
+             
+        </div> 
+      </div>
+      </section>
+      
+      <section id="Map">
+      <div class="container">
+        <div class="row">
+        <h2 class="text-center">Map</h2> 
+        <div id="mygooglemap">
+            </div>
+            
+            
+            
+            
         </div>   
           
       </div>
       
       </section>
+      <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-center">Copyright © Your Website 2016</h4>
+            </div>
+          <div class="col-md-4">
+              <div id="footer-icon">
+            <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>    
+               <a href="http://likedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+                  </div>
+            </div>
+            <div class="col-md-4">
+            <a href="#home"><h4 class="text-center">Privacy Policy</h4></a>
+            </div>
+          </div>  
+        </div>
+      
+      </footer>
+       <script>
+          function initMap() {
+            var uluru = {lat: 28.605977, lng: 76.991204};
+            var map = new google.maps.Map(document.getElementById('mygooglemap'), {
+              zoom: 14,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2q_dEg2a-BeIJxDtnHxzxRTh8GTAxYdA&callback=initMap">
+        </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
